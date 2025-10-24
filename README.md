@@ -29,6 +29,7 @@
   
   ##  :checkered_flag: Level-2:  Floorplan and Placement of VsdBabySoC design using OpenROAD 
    :rocket:At this stage, I performed Floorplan and Placement of VsdBabySoC design using OpenROAD.
+   
   :walking: <b>[Explore Level-2 Gameplay](Level_2/readme.md)</b>
   
   :chart_with_upwards_trend: <b>Level-2 Status:</b> :white_check_mark: Completed
