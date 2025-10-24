@@ -25,7 +25,7 @@
   
   ---
   <details>
-  <summary>:checkered_flag: <b>Level-2:</b>  Fundamentals of Static Timing Analysis (STA) </summary>
+  <summary>:checkered_flag: <b>Level-2:</b>  Floorplan and Placement of VsdBabySoC design using OpenROAD  </summary>
   
   ##  :checkered_flag: Level-2:  Floorplan and Placement of VsdBabySoC design using OpenROAD 
    :rocket:At this stage, I performed Floorplan and Placement of VsdBabySoC design using OpenROAD.
