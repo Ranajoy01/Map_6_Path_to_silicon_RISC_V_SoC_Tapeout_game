@@ -179,7 +179,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 ```
 - Use the Makefile in flow directory.
 - We use vsdbabysoc configuraton file instead of default configuration file.
-- `floorplan` .PHONY is ued.(target file is not real but a command name used in Makefile).
+- `floorplan` .PHONY is used.(target file is not real but a command name used in Makefile).
 
 #### Analysis of the floorplan.log
 
@@ -689,6 +689,10 @@ cp ./results/sky130hd/vsdbabysoc/base/2_1_floorplan.sdc ./results/sky130hd/vsdba
 ```bash
 $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ```
+- Use the Makefile in flow directory.
+- We use vsdbabysoc configuraton file instead of default configuration file.
+- `gui_floorplan` .PHONY is used.(target file is not real but a command name used in Makefile).
+ 
 #### This log is generated in terminal-
 ![fpg_log](images/fpg_log.png)
 #### This Floorplan GUI is opened-
@@ -738,7 +742,7 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
 ```
 - Use the Makefile in flow directory.
 - We use vsdbabysoc configuraton file instead of default configuration file.
-- `place` .PHONY is ued.(target file is not real but a command name used in Makefile).
+- `place` .PHONY is used.(target file is not real but a command name used in Makefile).
 
 #### Analysis of the pacement log
 
@@ -1438,6 +1442,10 @@ cp ./results/sky130hd/vsdbabysoc/base/2_floorplan.sdc ./results/sky130hd/vsdbaby
 ```bash
 $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
 ```
+- Use the Makefile in flow directory.
+- We use vsdbabysoc configuraton file instead of default configuration file.
+- `gui_place` .PHONY is used.(target file is not real but a command name used in Makefile).
+  
 #### This log is generated in terminal-
 ![plg_log](images/plg_log.png)
 #### This Placement GUI is opened-
