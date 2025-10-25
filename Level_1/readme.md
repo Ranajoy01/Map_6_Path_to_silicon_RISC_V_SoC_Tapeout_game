@@ -18,7 +18,7 @@
 ### :zap: Clone OpenROAD-flow-scripts repository and go to the repository directory-
 ```bash
 $ git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts --depth 1
-$ cd OpenROAD-flow-scripts
+$ cd OpenROAD-flow-scripts && ls
 ```
 - [https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) is the official repository which combine openroad engine with open source tools (Yosys, Klayout, OpenSTA) for RTL to GDSII flow.
 - `--recursive` flag is used to clone all submodule (Else only topmodule will be cloned).
@@ -62,7 +62,52 @@ $ ./build_openroad.sh --local --threads 1
 - OdbGtest is required for developers, so failure in linking to this will not cause that much problem.
       
 
- <div align="center">:star::star::star::star::star::star:</div> 
+<div align="center">:star::star::star::star::star::star:</div> 
+
+## :microscope: Verify the setup of OpenROAD-flow-script
+### :zap: `openroad` command will not work. To use `openroad` systemwide use the following command-
+```bash
+$ sudo ln -s ~/OpenROAD-flow-scripts/tools/OpenROAD/build/bin/openroad /usr/local/bin/openroad
+```
+- `ln` is used for link.
+- `-s` is used for symbolic link.
+- <b>Target file:</b> `~/OpenROAD-flow-scripts/tools/OpenROAD/build/bin/openroad` is the path to openroad binary.
+- <b>Destination or link:</b> `/usr/local/bin/openroad`
+
+### :zap: Verify OpenROAD installation-
+```bash
+$ source ./env.sh
+```
+- It specify the rules and setup environment for RTL to GDSII flow.
+  
+![env](images/env.png)
+
+---
+
+```bash
+$ cd flow && ls
+```
+- Go to the flow directory.
+
+![cf](images/cf.png)
+
+---
+```bash
+$ yosys -help
+```
+- Check if yosys command working properly (used for synthesis).
+  
+![ys](images/ys.png)
+  
+---
+```bash
+$ openroad -help
+```
+- Check if openroad command working propely (for RTL to GDSII flow).
+
+![or](images/or.png)
+
+<div align="center">:star::star::star::star::star::star:</div> 
 
  ## :trophy: Level Status: 
 
