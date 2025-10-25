@@ -34,6 +34,9 @@
 - `sdc` contain constraints file
 
 ### :zap: Create `config.mk` file in `~/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc` directory with the following content
+<details>
+<summary><mark>config.mk (Expand this for configuration file content)</mark></summary>
+	
 ```mk
   # Design and Platform Configuration
    export DESIGN_NICKNAME = vsdbabysoc
@@ -153,6 +156,9 @@
 9 directories, 19 files
 
 ```
+
+</details>
+
  <div align="center">:star::star::star::star::star::star:</div> 
 
 ## :microscope: Floorplan for VSDBabySoC design
@@ -169,7 +175,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 #### Analysis of the floorplan.log
 We get the following log in the terminal.I have annotated this log file-
 <details>
-<summary><mark>Floorplan log</mark></summary>
+<summary><mark>FLORPLAN LOG (Expand this for the log file content)</mark></summary>
 	
 ```
 mkdir -p results/sky130hd/vsdbabysoc/base/
