@@ -184,7 +184,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 #### Analysis of the floorplan.log
 We get the following log in the terminal.I have annotated this log file-
 <details>
-<summary><mark>FLORPLAN LOG (Expand this for the log file content)</mark></summary>
+<summary><mark>FLOORPLAN LOG (Expand this for the log file content)</mark></summary>
 	
 ```
 mkdir -p results/sky130hd/vsdbabysoc/base/
