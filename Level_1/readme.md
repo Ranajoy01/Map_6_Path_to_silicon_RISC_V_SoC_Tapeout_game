@@ -141,6 +141,7 @@ $ openroad -help
 $ make 
 ```
 - We will not explicitly specify `YOSYS_EXE=/usr/local/bin/yosys ` and `OPENROAD_EXE=/usr/local/bin/openroad` due to `settings.mk`.
+- It generate .odb files and reports.
 
 ![mk_1](images/mk_1.png)
 
