@@ -45,7 +45,7 @@
   [https://youtu.be/NWgkBBXXFKg?si=rDaLjedBmX12QMM_](https://youtu.be/NWgkBBXXFKg?si=rDaLjedBmX12QMM_)
 
   ### :zap: Github repository for OpenROAD flow script installation guide and Floorplan + Placement guide for VSDBabySoC
-  [https://github.com/spatha0011/spatha_vsdhdp/blob/main/Day14/README.md](https://github.com/spatha0011/spatha_vsdhdp/blob/main/Day14/README.md)
+  [https://github.com/spatha0011/spatha_vsd-hdp/tree/main/Day14](https://github.com/spatha0011/spatha_vsd-hdp/tree/main/Day14)
 
 <div align="center">:star::star::star::star::star::star:</div>
 
