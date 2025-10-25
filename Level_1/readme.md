@@ -74,7 +74,7 @@ $ sudo ln -s ~/OpenROAD-flow-scripts/tools/OpenROAD/build/bin/openroad /usr/loca
 - <b>Target file:</b> `~/OpenROAD-flow-scripts/tools/OpenROAD/build/bin/openroad` is the path to openroad binary.
 - <b>Destination or link:</b> `/usr/local/bin/openroad`
 
-### :zap: Verify OpenROAD installation-
+### :zap: Verify OpenROAD installation (based on basic commands working) -
 ```bash
 $ source ./env.sh
 ```
@@ -106,6 +106,41 @@ $ openroad -help
 - Check if openroad command working propely (for RTL to GDSII flow).
 
 ![or](images/or.png)
+
+---
+
+:100: Basic commands like yosys, openroad are working. So, OpenROAD flow script setup successful.
+
+---
+---
+
+### :zap: Verify OpenROAD installation (based on GUI working) -
+We will work on `flow` directory.
+
+```bash
+$ make YOSYS_EXE=/usr/local/bin/yosys \
+OPENROAD_EXE=/usr/local/bin/openroad
+```
+- We have to explicitly specify `YOSYS_EXE=/usr/local/bin/yosys ` and `OPENROAD_EXE=/usr/local/bin/openroad` else it will use default path for yosys and openroad and five error.
+
+![mk_1](images/mk_1.png)
+
+---
+
+Make final layout and verify GUI working.
+
+```bash
+make gui_final 
+```
+
+- GUI for the final layout is generated using this code.
+
+ ![gui](images/gui.png) 
+
+ ---
+
+ :100: GUI for layout is working properly. Thus the OpenROAD-flow-script is verified.
+
 
 <div align="center">:star::star::star::star::star::star:</div> 
 
