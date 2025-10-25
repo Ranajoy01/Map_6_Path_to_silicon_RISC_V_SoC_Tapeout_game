@@ -684,7 +684,20 @@ cp ./results/sky130hd/vsdbabysoc/base/2_1_floorplan.sdc ./results/sky130hd/vsdba
 
 ---
 
-### :zap: Visualize the floorplan using GUI
+### :zap: Visualize the floorplan using GUI and analyze the floorplan
+#### Inside `~/OpenROAD-flow-scripts/flow/` directory run this command-
+```bash
+$ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
+```
+#### This log is generated in terminal-
+![fpg_log](images/fpg_log.png)
+#### This Floorplan GUI is opened-
+![fpg_1](images/fpg_1.png)
+
+---
+#### Analysis of the floorplan GUI-
+
+
 
 
  <div align="center">:star::star::star::star::star::star:</div> 
