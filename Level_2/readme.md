@@ -706,6 +706,8 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 - Largest square specify the die area.
 - Second largest square specify the core area.
 
+---
+
 ##### Valid Standard cell area and macro area and macro positioning-
 ![fpg_3](images/fpg_3.png)
 
@@ -714,16 +716,22 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 - Large red square specify `dac` macro.
 - Small red square specify `pll` macro.
 
+---
+
 ##### Visualize row and site-
 ![fpg_4](images/fpg_4.png)
 
 - In valid standard cell area there is roows.
 - The small blocks are known as site. Here standard cells can be placed to avoid overlapping.
 
+---
+
 ##### Tapcell positioning-
 ![fpg_5](images/fpg_5.png)
 
 - Tapcells are positioned to avoid latch-up error.
+
+---
 
 ##### Power distribution network positioning-
 ![fpg_6](images/fpg_6.png)
@@ -1461,6 +1469,8 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
 ![plg_3](images/plg_3.png)
 
 - Detailed placement is performed. So all standard cells are placed inside `site` and there is no overlapping.
+
+---
 
 ##### Physical I/O pin placement-
 ![plg_4](images/plg_4.png)
