@@ -94,7 +94,7 @@
    export MAGIC_EXT_USE_GDS    = 1
 ```
 
----
+### :zap: Final directory tree structure-
 
 :100: After all these steps the `~/OpenROAD-flow-scripts/flow/designs/src/vsdbabysoc` directory will have the structure like this-
 ```
