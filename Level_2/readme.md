@@ -153,6 +153,20 @@
 9 directories, 19 files
 
 ```
+ <div align="center">:star::star::star::star::star::star:</div> 
+
+## :microscope: Floorplan for VSDBabySoC design
+### :zap: Perform floorplan and analyze the floorplan log
+
+#### Inside `~/OpenROAD-flow-scripts/flow/` directory run this command-
+```bash
+make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
+```
+- Use the Makefile in flow directory.
+- We use vsdbabysoc configuraton file instead of default configuration file.
+- `floorplan` .PHONY is ued.(target file is not real but a command name used in Makefile).
+
+#### Analysis of the floorplan.log
 
 
  <div align="center">:star::star::star::star::star::star:</div> 
