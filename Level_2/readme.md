@@ -168,7 +168,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 
 #### Analysis of the floorplan.log
 We get the following log in the terminal.I have annotated this log file-
-```bash
+```
 mkdir -p results/sky130hd/vsdbabysoc/base/
 echo 11 > results/sky130hd/vsdbabysoc/base/clock_period.txt
 <code><mark>----------------------SYNTHESIS START---------------------------</mark></code>
