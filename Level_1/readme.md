@@ -118,12 +118,24 @@ $ openroad -help
 
 ### :zap: Verify OpenROAD installation (based on GUI working) -
 #### We will work on `flow` directory.
+- In the `Makefile` in flow directory there is `-include settings.mk` which include `settings.mk` file if it is available. No such file available inititally.
+
+![mk_file](images/mk_file.png)
+   - So, create file `settings.mk` using ```bash nano settings.mk``` with the following content-
+   ```bash
+    # Path to OpenROAD binary
+    OPENROAD_EXE = /usr/local/bin/openroad
+    
+    # Path to Yosys binary
+    YOSYS_EXE = /usr/local/bin/yosys
+   ```
+   - Here default configuration is `./designs/nangate45/gcd/config.mk.
+     
 
 ```bash
-$ make YOSYS_EXE=/usr/local/bin/yosys \
-OPENROAD_EXE=/usr/local/bin/openroad
+$ make 
 ```
-- We have to explicitly specify `YOSYS_EXE=/usr/local/bin/yosys ` and `OPENROAD_EXE=/usr/local/bin/openroad` else it will use default path for yosys and openroad and five error.
+- We will not explicitly specify `YOSYS_EXE=/usr/local/bin/yosys ` and `OPENROAD_EXE=/usr/local/bin/openroad` due to `settings.mk`.
 
 ![mk_1](images/mk_1.png)
 
