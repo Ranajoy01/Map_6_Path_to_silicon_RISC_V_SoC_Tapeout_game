@@ -181,7 +181,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 - We use vsdbabysoc configuraton file instead of default configuration file.
 - `floorplan` .PHONY is used.(target file is not real but a command name used in Makefile).
 
-#### Analysis of the floorplan.log
+#### Analysis of the floorplan log
 
 ![fp_log](images/fp_log.png)
 
@@ -693,9 +693,9 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 - We use vsdbabysoc configuraton file instead of default configuration file.
 - `gui_floorplan` .PHONY is used.(target file is not real but a command name used in Makefile).
  
-#### This log is generated in terminal-
+##### This log is generated in terminal-
 ![fpg_log](images/fpg_log.png)
-#### This Floorplan GUI is opened-
+##### This Floorplan GUI is opened-
 ![fpg_1](images/fpg_1.png)
 
 ---
@@ -1446,9 +1446,9 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
 - We use vsdbabysoc configuraton file instead of default configuration file.
 - `gui_place` .PHONY is used.(target file is not real but a command name used in Makefile).
   
-#### This log is generated in terminal-
+##### This log is generated in terminal-
 ![plg_log](images/plg_log.png)
-#### This Placement GUI is opened-
+##### This Placement GUI is opened-
 ![plg_1](images/plg_1.png)
 
 ---
