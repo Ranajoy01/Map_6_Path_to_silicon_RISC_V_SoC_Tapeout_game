@@ -10,7 +10,7 @@
 
 <div align="center">:star::star::star::star::star::star:</div> 
 
-# Level-2: Floorplan and Placement of VsdBabySoC design using OpenROAD
+# Level-2: Floorplan and Placement of VsdBabySoC design using OpenROAD-flow-script
 
 ## List of Objectives
 
@@ -18,6 +18,10 @@
   
  <div align="center">:star::star::star::star::star::star:</div> 
 
+## :microscope: Setup VSDBabySoC directories for physical design using OpenROAD-flow-script
+### :zap: Create two vsdbabysoc directories-
+- For Verilog files `~/OpenROAD-flow-scripts/flow/designs/src/vsdbabysoc`
+- For config, include, macro, lib files `~/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc`
 
 
  <div align="center">:star::star::star::star::star::star:</div> 
