@@ -160,6 +160,7 @@ $ make gui_final
  ---
 
  :100: GUI for layout is working properly. Thus the OpenROAD-flow-script is verified.
+ :100: Full physical design flow performed for final layout. So, OpenROAD-flow-script is working properly.
 
 
 <div align="center">:star::star::star::star::star::star:</div> 
