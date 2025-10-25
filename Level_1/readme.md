@@ -131,6 +131,7 @@ $ openroad -help
    ```
    - Here default configuration is `./designs/nangate45/gcd/config.mk.
      
+---
 
 ```bash
 $ make 
