@@ -171,7 +171,7 @@ We get the following log in the terminal.I have annotated this log file-
 ```bash
 mkdir -p results/sky130hd/vsdbabysoc/base/
 echo 11 > results/sky130hd/vsdbabysoc/base/clock_period.txt
-<mark>----------------------SYNTHESIS START---------------------------</mark>
+<code><mark>----------------------SYNTHESIS START---------------------------</mark></code>
 /home/ranajoy01/OpenROAD-flow-scripts/flow/scripts/synth.sh /home/ranajoy01/OpenROAD-flow-scripts/flow/scripts/synth_canonicalize.tcl ./logs/sky130hd/vsdbabysoc/base/1_1_yosys_canonicalize.log
 Using ABC speed script.
 Extracting clock period from SDC file: ./results/sky130hd/vsdbabysoc/base/clock_period.txt
