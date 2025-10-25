@@ -171,7 +171,9 @@ We get the following log in the terminal.I have annotated this log file-
 ```
 mkdir -p results/sky130hd/vsdbabysoc/base/
 echo 11 > results/sky130hd/vsdbabysoc/base/clock_period.txt
-<code><mark>----------------------SYNTHESIS START---------------------------</mark></code>
+-----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------SYNTHESIS START---------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 /home/ranajoy01/OpenROAD-flow-scripts/flow/scripts/synth.sh /home/ranajoy01/OpenROAD-flow-scripts/flow/scripts/synth_canonicalize.tcl ./logs/sky130hd/vsdbabysoc/base/1_1_yosys_canonicalize.log
 Using ABC speed script.
 Extracting clock period from SDC file: ./results/sky130hd/vsdbabysoc/base/clock_period.txt
@@ -495,8 +497,12 @@ Time spent: 56% 2x abc (6 sec), 10% 34x opt_clean (1 sec), ...
 Elapsed time: 0:11.45[h:]min:sec. CPU time: user 11.28 sys 0.17 (100%). Peak memory: 75812KB.
 mkdir -p ./results/sky130hd/vsdbabysoc/base ./logs/sky130hd/vsdbabysoc/base ./reports/sky130hd/vsdbabysoc/base
 cp ./results/sky130hd/vsdbabysoc/base/1_2_yosys.v ./results/sky130hd/vsdbabysoc/base/1_synth.v
-<mark>----------------------SYNTHESIS END---------------------------</mark>
-<mark>---------------------FLOORPLAN START---------------------------</mark>
+-----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------SYNTHESIS END---------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+---------------------FLOORPLAN START---------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 /home/ranajoy01/OpenROAD-flow-scripts/flow/scripts/flow.sh 2_1_floorplan floorplan
 Running floorplan.tcl, stage 2_1_floorplan
 read_liberty /home/ranajoy01/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -525,7 +531,9 @@ Warning: There are 2 unconstrained endpoints.
 <mark>---------------Instances in verilog design---------------------</mark>
 number instances in verilog is 6605
 [WARNING IFP-0028] Core area lower left (20.000, 20.000) snapped to (20.240, 21.760).
-<mark>-----------No of rows and site----------------------------</mark>
+---------------------------------------------------------------------------------------------------------------------------------------------
+-----------No of rows and site----------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------
 [INFO IFP-0001] Added 576 rows of 3412 site unithd.
 source /home/ranajoy01/OpenROAD-flow-scripts/flow/platforms/sky130hd/make_tracks.tcl
 source /home/ranajoy01/OpenROAD-flow-scripts/flow/platforms/sky130hd/fastroute.tcl
@@ -546,7 +554,9 @@ Report metrics stage 2, floorplan final...
 ==========================================================================
 floorplan final report_design_area
 --------------------------------------------------------------------------
-<mark>--------------Design area utilization-------------</mark>
+-----------------------------------------------------------------------------------------------------------------------------------------------
+--------------Design area utilization-------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 Design area 722267 um^2 29% utilization.
 Elapsed time: 0:03.58[h:]min:sec. CPU time: user 3.50 sys 0.70 (117%). Peak memory: 141124KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
@@ -559,7 +569,9 @@ read_liberty /home/ranajoy01/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbaby
 read_db ./results/sky130hd/vsdbabysoc/base/2_1_floorplan.odb
 rtl_macro_placer -max_num_level 2 -halo_width 40 -halo_height 40 -min_ar 0.33 -signature_net_threshold 50 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/sky130hd/vsdbabysoc/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.6
 Die Area: (0.00, 0.00) (1600.00, 1600.00),  Floorplan Area: (20.24, 21.76) (1589.76, 1588.48)
- <mark>-------------------Standard cell Macros--------------------------------</mark>
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ -------------------Standard cell Macros-------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 	Number of std cell instances: 6011
 	Area of std cell instances: 50614.96
 	Number of macros: 2
@@ -590,7 +602,9 @@ Took 22 seconds: rtl_macro_placer -max_num_level 2 -halo_width 40 -halo_height 4
 Elapsed time: 0:23.18[h:]min:sec. CPU time: user 33.64 sys 26.70 (260%). Peak memory: 168092KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
 2_2_floorplan_macro               23            164 ed43eed0ebb4b136e599
-<mark>----------------TAPCELL----------------------------------------------------</mark>
+-----------------------------------------------------------------------------------------------------------------------------------------------
+----------------TAPCELL----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 /home/ranajoy01/OpenROAD-flow-scripts/flow/scripts/flow.sh 2_3_floorplan_tapcell tapcell
 Running tapcell.tcl, stage 2_3_floorplan_tapcell
 read_liberty /home/ranajoy01/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -602,7 +616,9 @@ read_db ./results/sky130hd/vsdbabysoc/base/2_2_floorplan_macro.odb
 Elapsed time: 0:00.86[h:]min:sec. CPU time: user 0.79 sys 0.06 (99%). Peak memory: 125992KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
 2_3_floorplan_tapcell              0            123 4bd4213c751fb968c07c
-<mark>------------------POWER DISTRIBUTION NETWORK---------------------------------</mark>
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------POWER DISTRIBUTION NETWORK---------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 /home/ranajoy01/OpenROAD-flow-scripts/flow/scripts/flow.sh 2_4_floorplan_pdn pdn
 Running pdn.tcl, stage 2_4_floorplan_pdn
 read_liberty /home/ranajoy01/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -621,7 +637,9 @@ Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
 2_4_floorplan_pdn                  2            205 2658412dd4617b4200aa
 cp ./results/sky130hd/vsdbabysoc/base/2_4_floorplan_pdn.odb ./results/sky130hd/vsdbabysoc/base/2_floorplan.odb
 cp ./results/sky130hd/vsdbabysoc/base/2_1_floorplan.sdc ./results/sky130hd/vsdbabysoc/base/2_floorplan.sdc
-<mark>----------------------FLOORPLAN END---------------------------</mark>
+-----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------FLOORPLAN END---------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 ```
 - In this log we can see at first synthesis part is performed using yosys.
 - 
