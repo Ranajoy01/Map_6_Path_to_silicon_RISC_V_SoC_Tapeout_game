@@ -721,8 +721,8 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ##### Visualize row and site-
 ![fpg_4](images/fpg_4.png)
 
-- In valid standard cell area there is roows.
-- The small blocks are known as site. Here standard cells can be placed to avoid overlapping.
+- In valid standard cell area there are `rows`.
+- The small blocks are known as `site`. Here standard cells can be placed to avoid overlapping.
 
 ---
 
