@@ -56,6 +56,8 @@ $ ./build_openroad.sh --local --threads 1
 
 ![build_orfs](images/build_orfs.png)
 
+![build_orfs_1](images/build_orfs_1.png)
+
 :100: OpenROAD flow script tools are built propely (binary files) but linking to OdbGtest is failed.
 
 - For OpenROAD flow we need openroad, yosys and other tools binary file,these are built propely.
