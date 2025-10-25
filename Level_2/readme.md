@@ -662,6 +662,7 @@ cp ./results/sky130hd/vsdbabysoc/base/2_1_floorplan.sdc ./results/sky130hd/vsdba
 -----------------------------------------------------------------------------------------------------------------------------------------------
 ```
 </details>
+
 - If synthesis is not done before then synthesis is performed before floorplan.
 - Die and core area is defined.
 - In this log we can see at first synthesis part is performed using yosys.
