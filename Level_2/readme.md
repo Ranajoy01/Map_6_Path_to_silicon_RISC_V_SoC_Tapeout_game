@@ -14,7 +14,9 @@
 
 ## List of Objectives
 
-- :microscope: <b>Practical Objective-1:</b> []()
+- :microscope: <b>Practical Objective-1:</b> [Setup VSDBabySoC directories for physical design using OpenROAD-flow-script](#microscope-setup-vsdbabysoc-directories-for-physical-design-using-openroad-flow-script)
+- :microscope: <b>Practical Objective-2:</b> [Floorplan for VSDBabySoC design](#microscope-floorplan-for-vsdbabysoc-design)
+- :microscope: <b>Practical Objective-3:</b> [Placement for VSDBabySoC design](#microscope-placement-for-vsdbabysoc-design)
   
  <div align="center">:star::star::star::star::star::star:</div> 
 
