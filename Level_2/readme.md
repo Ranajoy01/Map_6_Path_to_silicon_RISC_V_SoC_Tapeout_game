@@ -96,6 +96,14 @@
    export MAGIC_ZEROIZE_ORIGIN = 0
    export MAGIC_EXT_USE_GDS    = 1
 ```
+#### config.mk file is important for physical design using OpenROAD-flow-script. It contains-
+- Configuration file contains the path for verilog files, constraints, header files, macro .
+- Die area and core area.
+- Pin and macro placement configuration.
+- Clock configuration.
+- Timing and buffer configuration.
+- Optimization rules.
+---
 
 ### :zap: Final directory tree structure-
 
