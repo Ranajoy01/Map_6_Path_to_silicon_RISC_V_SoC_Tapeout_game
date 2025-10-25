@@ -182,6 +182,9 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 - `floorplan` .PHONY is ued.(target file is not real but a command name used in Makefile).
 
 #### Analysis of the floorplan.log
+
+![fp_log](images/fp_logs.png)
+
 We get the following log in the terminal.I have annotated this log file-
 <details>
 <summary><mark>FLOORPLAN LOG (Expand this for the log file content)</mark></summary>
@@ -678,6 +681,10 @@ cp ./results/sky130hd/vsdbabysoc/base/2_1_floorplan.sdc ./results/sky130hd/vsdba
 - Tapcell positioning.
 - Area utilization.
 - Power Distribution network (PDN) positioning.
+
+---
+
+### :zap: Visualize the floorplan using GUI
 
 
  <div align="center">:star::star::star::star::star::star:</div> 
