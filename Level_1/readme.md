@@ -130,6 +130,8 @@ $ openroad -help
     YOSYS_EXE = /usr/local/bin/yosys
    ```
    - Here default configuration is `./designs/nangate45/gcd/config.mk.
+   - Here `nangat45` pdk used.
+   - A GCD (Greatest common divisor) accelerator system's (Euclidean method) full Physical design flow is performed.
      
 ---
 
@@ -145,7 +147,7 @@ $ make
 #### Make final layout and verify GUI working.
 
 ```bash
-make gui_final 
+$ make gui_final 
 ```
 
 - GUI for the final layout is generated using this code.
