@@ -721,6 +721,10 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 
 - Tapcells are positioned to avoid latch-up error.
 
+##### Power distribution network positioning-
+![fpg_6](images/fpg_6.png)
+
+- PDN is positioned here we can observe Vpwr and Vgnd.
 
  <div align="center">:star::star::star::star::star::star:</div> 
 
