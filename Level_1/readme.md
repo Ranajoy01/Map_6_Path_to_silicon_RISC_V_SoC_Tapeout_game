@@ -134,6 +134,7 @@ $ openroad -help
    - Here default configuration is `./designs/nangate45/gcd/config.mk.
    - Here `nangat45` pdk used.
    - A GCD (Greatest common divisor) accelerator system's (Euclidean method) full Physical design flow is performed.
+   - The system is designed as integration of datapath and controller.
      
 ---
 
