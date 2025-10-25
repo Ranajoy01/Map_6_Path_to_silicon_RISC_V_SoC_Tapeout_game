@@ -10,7 +10,9 @@
 
 ## List of Objectives
 
-- :microscope: <b>Practical Objective-1:</b> []()
+- :microscope: <b>Practical Objective-1:</b> [OpenROAD flow scripts installation and setup](#microscope-openroad-flow-scripts-installation-and-setup)
+  
+- :microscope: <b>Practical Objective-2:</b> [Verify the setup of OpenROAD-flow-script](#microscope-verify-the-setup-of-openroad-flow-script)
   
  <div align="center">:star::star::star::star::star::star:</div> 
 
