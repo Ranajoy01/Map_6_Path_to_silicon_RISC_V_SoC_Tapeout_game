@@ -36,6 +36,16 @@
   </details>
 
   ---
-  
-  <div align="center">:star::star::star::star::star::star:</div>
+
+<div align="center">:star::star::star::star::star::star:</div>
+
+  ## :book: Reference
+
+  ### :zap: OpenROAD chip placement and planning by NPTEL
+  [https://youtu.be/NWgkBBXXFKg?si=rDaLjedBmX12QMM_](https://youtu.be/NWgkBBXXFKg?si=rDaLjedBmX12QMM_)
+
+  ### :zap: Github repository for OpenROAD flow script installation guide and Floorplan + Placement guide for VSDBabySoC
+  [https://github.com/spatha0011/spatha_vsdhdp/blob/main/Day14/README.md](https://github.com/spatha0011/spatha_vsdhdp/blob/main/Day14/README.md)
+
+<div align="center">:star::star::star::star::star::star:</div>
 
