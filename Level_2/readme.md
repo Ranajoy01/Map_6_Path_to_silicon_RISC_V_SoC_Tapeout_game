@@ -183,7 +183,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 
 #### Analysis of the floorplan.log
 
-![fp_log](images/fp_logs.png)
+![fp_log](images/fp_log.png)
 
 We get the following log in the terminal.I have annotated this log file-
 <details>
@@ -1416,11 +1416,48 @@ Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
 cp ./results/sky130hd/vsdbabysoc/base/3_5_place_dp.odb ./results/sky130hd/vsdbabysoc/base/3_place.odb
 cp ./results/sky130hd/vsdbabysoc/base/2_floorplan.sdc ./results/sky130hd/vsdbabysoc/base/3_place.sdc
 
-
-
 ```
-
 </details>
+
+- At first global placement of cells without I/O pin placement performed.
+- Global placement means rough placement of standard cells on core. These can overlap each other.
+- Then physical placement of I/O pins are performed (In floorplan logical I/O pin placement is occured).
+- Timing optimization is performed.
+- Detailed placement means place standard cells on valid `site` and no overlap occurs.
+
+##### So Placement performs-
+- Global placement
+- Physical I/O pin placement
+- Timing optimization
+- Detailed placement
+
+---
+
+### :zap: Visualize the placement using GUI and analyze the placement
+#### Inside `~/OpenROAD-flow-scripts/flow/` directory run this command-
+```bash
+$ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
+```
+#### This log is generated in terminal-
+![plg_log](images/plg_log.png)
+#### This Placement GUI is opened-
+![plg_1](images/plg_1.png)
+
+---
+#### Analysis of the placement GUI-
+##### Standard cell placement-
+![plg_2](images/plg_2.png)
+
+- Here darker red parts represent standard cells.
+
+![plg_3](images/plg_3.png)
+
+- Detailed placement is performed. So all standard cells are placed inside `site` and there is no overlapping.
+
+##### Physical I/O pin placement-
+![plg_4](images/plg_4.png)
+
+- Here we can see the physical pin placement.
 
 <div align="center">:star::star::star::star::star::star:</div> 
  
