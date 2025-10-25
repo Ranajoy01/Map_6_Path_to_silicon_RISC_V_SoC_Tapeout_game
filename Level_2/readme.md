@@ -696,8 +696,30 @@ $ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 
 ---
 #### Analysis of the floorplan GUI-
+##### Die area and core area-
+![fpg_2](images/fpg_2.png)
 
+- Largest square specify the die area.
+- Second largest square specify the core area.
 
+##### Valid Standard cell area and macro area and macro positioning-
+![fpg_3](images/fpg_3.png)
+
+- Green region is Valid standard cell area.
+- Red regions are two macros.
+- Large red square specify `dac` macro.
+- Small red square specify `pll` macro.
+
+##### Visualize row and site-
+![fpg_4](images/fpg_4.png)
+
+- In valid standard cell area there is roows.
+- The small blocks are known as site. Here standard cells can be placed to avoid overlapping.
+
+##### Tapcell positioning-
+![fpg_5](images/fpg_5.png)
+
+- Tapcells are positioned to avoid latch-up error.
 
 
  <div align="center">:star::star::star::star::star::star:</div> 
