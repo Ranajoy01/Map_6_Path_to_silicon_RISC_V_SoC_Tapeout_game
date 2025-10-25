@@ -528,7 +528,9 @@ Floorplan check_setup
 Warning: There are 7 input ports missing set_input_delay.
 Warning: There is 1 output port missing set_output_delay.
 Warning: There are 2 unconstrained endpoints.
-<mark>---------------Instances in verilog design---------------------</mark>
+-----------------------------------------------------------------------------------------------------------------------------------------------
+--------------Instances in verilog design---------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 number instances in verilog is 6605
 [WARNING IFP-0028] Core area lower left (20.000, 20.000) snapped to (20.240, 21.760).
 ---------------------------------------------------------------------------------------------------------------------------------------------
