@@ -115,7 +115,7 @@ $ openroad -help
 ---
 
 ### :zap: Verify OpenROAD installation (based on GUI working) -
-We will work on `flow` directory.
+#### We will work on `flow` directory.
 
 ```bash
 $ make YOSYS_EXE=/usr/local/bin/yosys \
@@ -127,7 +127,7 @@ OPENROAD_EXE=/usr/local/bin/openroad
 
 ---
 
-Make final layout and verify GUI working.
+#### Make final layout and verify GUI working.
 
 ```bash
 make gui_final 
