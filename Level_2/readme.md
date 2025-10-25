@@ -168,6 +168,9 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 
 #### Analysis of the floorplan.log
 We get the following log in the terminal.I have annotated this log file-
+<details>
+<summary><mark>Floorplan log</mark></summary>
+	
 ```
 mkdir -p results/sky130hd/vsdbabysoc/base/
 echo 11 > results/sky130hd/vsdbabysoc/base/clock_period.txt
@@ -643,8 +646,22 @@ cp ./results/sky130hd/vsdbabysoc/base/2_1_floorplan.sdc ./results/sky130hd/vsdba
 ----------------------FLOORPLAN END---------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------
 ```
+</details>
+- If synthesis is not done before then synthesis is performed before floorplan.
+- Die and core area is defined.
 - In this log we can see at first synthesis part is performed using yosys.
-- 
+- Then Instance and macro area calculation done.
+- Then macros are positioned on core.
+  - Here are 2 macros - `dac` and `pll` (analog IPs)
+- Then Tapcells are positioned on core (Tapcells are essential in CMOS physical design to ensure electrical reliability and prevent destructive effects such as latch-up).
+-  Power distribution network is positioned on core.
+
+#### :100: So floorplan perform-
+- Die and core generation.
+- Instance and macro check and macro positioning.
+- Tapcell positioning.
+- Area utilization.
+- Power Distribution network (PDN) positioning.
 
 
  <div align="center">:star::star::star::star::star::star:</div> 
